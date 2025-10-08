@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "MeshEnvy",
   tagline: "Building Meshtastic across Nevada",
-  favicon: "img/favicon.ico",
+  favicon: "/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "benallfree", // Usually your GitHub org/user name.
+  projectName: "meshenvy", // Usually your repo name.
 
   onBrokenLinks: "throw",
 
@@ -43,8 +43,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/benallfree/meshenvy/tree/main/docs",
         },
         blog: {
           showReadingTime: true,
@@ -54,8 +53,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/benallfree/meshenvy/tree/main/blog",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -70,15 +68,15 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "/opengraph.webp",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "My Site",
+      title: "MeshEnvy",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "MeshEnvy Logo",
+        src: "/favicon-32x32.png",
       },
       items: [
         {
@@ -89,7 +87,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/benallfree/meshenvy",
           label: "GitHub",
           position: "right",
         },
@@ -111,16 +109,12 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://discord.gg/gRWAccbEWN",
             },
             {
               label: "X",
-              href: "https://x.com/docusaurus",
+              href: "https://x.com/meshenvy",
             },
           ],
         },
@@ -133,12 +127,12 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/benallfree/meshenvy",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} MeshEnvy. Built with love in Reno, NV.`,
     },
     prism: {
       theme: prismThemes.github,
