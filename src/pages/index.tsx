@@ -20,8 +20,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.youtube.com/watch?v=gH-K9fRuhfQ">
-            Watch a Demo - Get Started with Meshtastic
+            to="https://meshenvy.kit.com/9a76ddcad8">
+            MeshEnvy Events
           </Link>
         </div>
       </div>
