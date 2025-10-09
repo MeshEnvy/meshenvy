@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://meshenvy.kit.com/9a76ddcad8">
-            MeshEnvy Events
+            Sign up for MeshEnvy Events
           </Link>
         </div>
       </div>
