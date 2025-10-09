@@ -70,7 +70,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "/opengraph.webp",
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: "light",
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: "MeshEnvy",
