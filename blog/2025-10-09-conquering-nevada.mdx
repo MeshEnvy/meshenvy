@@ -1,0 +1,76 @@
+---
+slug: conquering-nevada
+title: "Conquering Nevada: A Meshtastic Coverage Analysis"
+authors: benallfree
+---
+
+What would it take to blanket the entire state of Nevada with a Meshtastic mesh network? Let's do the math.
+
+{/* truncate */}
+
+## The Nevada Advantage
+
+Nevada is uniquely positioned for long-range radio communications. With its relatively flat terrain and minimal vegetation in many areas, line-of-sight conditions are exceptional. While mountainous regions exist, much of Nevada's 110,577 square miles consists of wide open desert—perfect for radio propagation.
+
+## Range Assumptions
+
+In ideal Nevada conditions, Meshtastic nodes can achieve impressive ranges:
+- **Typical relay distance**: 15-25 miles between nodes
+- **Conservative estimate**: 20 miles average
+- **Coverage area per node**: ~1,257 square miles (π × 20²)
+
+## The Redundancy Factor
+
+A reliable mesh network needs redundancy. If one node fails, the network should route around it. For robust coverage, we want at least **3x redundancy**—meaning any location should be reachable by at least 3 different nodes.
+
+With 3x redundancy:
+- **Effective coverage per node**: ~419 square miles
+- **Nodes required**: 110,577 ÷ 419 ≈ **264 nodes**
+
+## Edge Cases and Reality
+
+The 264-node estimate assumes perfect hexagonal packing and uniform terrain. Reality requires more:
+
+1. **Mountain ranges**: The Sierra Nevada, Ruby Mountains, and other ranges create radio shadows requiring additional nodes
+2. **Urban areas**: Cities like Las Vegas and Reno need denser coverage for higher traffic
+3. **Border connectivity**: Nodes along state borders need extra coverage to maintain mesh integrity
+4. **Maintenance access**: Some locations are more practical than others
+
+A realistic deployment would likely need **300-350 nodes** for comprehensive, reliable coverage.
+
+## The Price Tag
+
+At $100 per node (including solar setup, weatherproofing, and all hardware—ready to deploy):
+- **Conservative (264 nodes)**: $26,400
+- **Realistic (300 nodes)**: $30,000
+- **Robust (350 nodes)**: $35,000
+
+These are complete, turnkey costs. Each node is ready to be placed and activated.
+
+## Is It Feasible?
+
+Absolutely! For **$30,000-$35,000**, you could provide off-grid communications coverage to an entire state. Compare this to:
+- **Single cell tower**: $150,000-$300,000 per tower (plus ongoing carrier costs)
+- **Satellite system**: Tens of millions in development and deployment
+- **Nevada's annual road salt budget**: ~$3 million
+
+A 300-node Meshtastic network covering Nevada represents one of the most cost-effective large-scale communications infrastructure projects imaginable. This is less than the cost of a new car—for an entire state's mesh network.
+
+## The Community Approach
+
+Rather than one entity funding the entire network, a community-driven approach makes even more sense:
+- **300 volunteers** each deploying **1 node**: Network funded
+- **Cost per participant**: $100 (turnkey, ready to place)
+- **Benefit**: Statewide resilient communications
+- **Effort**: Place one node in an optimal location
+
+This is the true power of mesh networks—distributed ownership creating resilient infrastructure. Three hundred people, $100 each, and Nevada has off-grid communications.
+
+## Conclusion
+
+Covering Nevada with Meshtastic is not just possible—it's remarkably affordable. With 300-350 nodes strategically placed across the state's 110,577 square miles, we could create a resilient, off-grid communications network for **$30,000-$35,000 total**.
+
+The real challenge isn't the money—it's coordination and finding optimal placement locations. But for a state as vast and remote as Nevada, the value proposition is undeniable.
+
+Who's ready to build the Silver State's mesh network?
+
