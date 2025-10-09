@@ -4,7 +4,8 @@ import Heading from '@theme/Heading'
 import { eventsData } from '@site/src/data/events'
 import styles from './events.module.css'
 
-function formatEventDate(date: Date): string {
+function formatEventDate(date: Date | undefined): string {
+  if (!date) return 'TBD'
   return date.toLocaleDateString('en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -17,8 +18,17 @@ function formatEventDate(date: Date): string {
 
 export default function Events(): ReactNode {
   const now = new Date()
-  const upcomingEvents = eventsData.filter((event) => event.date >= now).sort((a, b) => a.date.getTime() - b.date.getTime())
-  const pastEvents = eventsData.filter((event) => event.date < now).sort((a, b) => b.date.getTime() - a.date.getTime())
+  const upcomingEvents = eventsData
+    .filter((event) => !event.date || event.date >= now)
+    .sort((a, b) => {
+      // Events without dates go to the end
+      if (!a.date) return 1
+      if (!b.date) return -1
+      return a.date.getTime() - b.date.getTime()
+    })
+  const pastEvents = eventsData
+    .filter((event) => event.date && event.date < now)
+    .sort((a, b) => b.date!.getTime() - a.date!.getTime())
 
   return (
     <Layout title="Events" description="Upcoming Meshtastic in-person events and meetups in Nevada">
@@ -45,7 +55,7 @@ export default function Events(): ReactNode {
 
                 <div className={styles.eventsList}>
                   {upcomingEvents.map((event) => (
-                    <div key={`${event.title}-${event.date.toISOString()}`} className={styles.eventCard}>
+                    <div key={`${event.title}-${event.date?.toISOString() || 'tbd'}`} className={styles.eventCard}>
                       <div className={styles.eventContent}>
                         <h3 className={styles.eventTitle}>{event.title}</h3>
                         <div className={styles.eventMeta}>
@@ -102,7 +112,7 @@ export default function Events(): ReactNode {
 
                 <div className={styles.eventsList}>
                   {pastEvents.map((event) => (
-                    <div key={`${event.title}-${event.date.toISOString()}`} className={styles.eventCard}>
+                    <div key={`${event.title}-${event.date?.toISOString() || 'tbd'}`} className={styles.eventCard}>
                       <div className={styles.eventContent}>
                         <h3 className={styles.eventTitle}>{event.title}</h3>
                         <div className={styles.eventMeta}>
