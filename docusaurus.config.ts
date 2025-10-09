@@ -120,6 +120,18 @@ const config: Config = {
               label: "GitHub",
               href: "https://github.com/benallfree/meshenvy",
             },
+            {
+              label: "YouTube",
+              href: "https://www.youtube.com/@meshenvyofficial",
+            },
+            {
+              label: "Instagram",
+              href: "https://instagram.com/meshenvy",
+            },
+            {
+              label: "TikTok",
+              href: "https://tiktok.com/meshenvy",
+            },
           ],
         },
       ],
