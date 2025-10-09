@@ -5,8 +5,9 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "MeshEnvy",
-  tagline: "Building Meshtastic across Nevada",
+  title: "Building Nevada's LoRa Mesh",
+  tagline:
+    "MeshEnvy is a statewide initiative to build a mesh network of Meshtastic devices across Nevada",
   favicon: "/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
