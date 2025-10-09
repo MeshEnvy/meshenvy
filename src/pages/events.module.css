@@ -1,0 +1,150 @@
+.eventsPage {
+  padding: 2rem 0;
+  min-height: calc(100vh - 60px);
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.introSection {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.introSection p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--ifm-font-color-base);
+}
+
+.categoriesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categorySection {
+  margin-bottom: 3rem;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.categoryDescription {
+  font-size: 1.1rem;
+  color: var(--ifm-font-color-secondary);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.eventsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.eventCard {
+  background: var(--ifm-card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  overflow: hidden;
+  height: 100%;
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.eventCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.eventContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.eventTitle {
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-primary);
+  line-height: 1.3;
+}
+
+.eventMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.eventDate,
+.eventLocation {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.eventDate svg,
+.eventLocation svg {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.eventDate span,
+.eventLocation span {
+  line-height: 1.4;
+}
+
+.eventDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  color: var(--ifm-font-color-base);
+  flex-grow: 1;
+}
+
+.eventLink {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.2s ease;
+}
+
+.eventLink:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .categoryTitle {
+    font-size: 1.5rem;
+  }
+
+  .eventsList {
+    grid-template-columns: 1fr;
+  }
+
+  .introSection p {
+    font-size: 1rem;
+  }
+}
