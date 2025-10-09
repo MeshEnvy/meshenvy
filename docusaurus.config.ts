@@ -139,7 +139,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} MeshEnvy. Built with love in Reno, NV.`,
+      copyright: `Built with love in Reno, NV.`,
     },
     prism: {
       theme: prismThemes.github,
