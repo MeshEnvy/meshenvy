@@ -176,6 +176,88 @@ export const projectsData: Project[] = [
     ],
   },
   {
+    id: "gofundme-campaign",
+    title: "GoFundMe Campaign",
+    description:
+      "Active fundraising campaign to support initial network deployment and equipment costs. Our goal is to raise $3,000 to cover the first phase of infrastructure and establish 501(c)(3) nonprofit status.",
+    status: "active",
+    startDate: new Date("2025-10-09"),
+    updates: [
+      {
+        date: new Date("2025-10-09"),
+        title: "Campaign Launched",
+        description:
+          "GoFundMe campaign is now live. First goal of $3,000 will enable nonprofit formation and initial equipment purchases.",
+      },
+    ],
+  },
+  {
+    id: "nonprofit-formation",
+    title: "501(c)(3) Nonprofit Formation",
+    description:
+      "Formation of a 501(c)(3) nonprofit organization to provide a formal structure for fundraising, grant applications, and community organization. This will enable us to accept tax-deductible donations and apply for larger funding opportunities. Many critical capabilities are blocked until nonprofit status is established.",
+    status: "planning",
+    startDate: new Date("2025-10-09"),
+    updates: [
+      {
+        date: new Date("2025-10-09"),
+        title: "Pending Funding",
+        description:
+          "Awaiting $3,000 fundraising goal to cover filing fees, legal costs, and initial operating expenses for nonprofit formation.",
+      },
+    ],
+    checklist: [
+      {
+        title: "Reach $3,000 Fundraising Goal",
+        description:
+          "Initial funding needed to cover nonprofit formation costs including filing fees and legal expenses",
+        completed: false,
+        difficulty: "medium",
+      },
+      {
+        title: "File 501(c)(3) Application",
+        description: "Submit IRS Form 1023 or 1023-EZ for tax-exempt status",
+        completed: false,
+        difficulty: "hard",
+      },
+      {
+        title: "Open Nonprofit Bank Account",
+        description:
+          "Establish dedicated bank account for organizational finances (blocked until 501(c)(3) approved)",
+        completed: false,
+        difficulty: "easy",
+      },
+      {
+        title: "Set Up Stripe Account",
+        description:
+          "Enable credit card processing for merch store and donations (blocked until 501(c)(3) approved)",
+        completed: false,
+        difficulty: "easy",
+      },
+      {
+        title: "Enable GitHub Sponsors",
+        description:
+          "Accept recurring donations via GitHub Sponsors (blocked until 501(c)(3) approved)",
+        completed: false,
+        difficulty: "easy",
+      },
+      {
+        title: "Activate GoFundMe Recurring Donations",
+        description:
+          "Enable monthly recurring donation option on GoFundMe (blocked until 501(c)(3) approved)",
+        completed: false,
+        difficulty: "easy",
+      },
+      {
+        title: "Launch Merchandise Store",
+        description:
+          "Activate online merch store with payment processing (blocked until Stripe account established)",
+        completed: false,
+        difficulty: "medium",
+      },
+    ],
+  },
+  {
     id: "nsf-grant-proposal",
     title: "NSF Grant Proposal",
     description:

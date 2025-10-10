@@ -36,6 +36,18 @@ function getStatusLabel(status: string): string {
 }
 
 export default function Projects(): ReactNode {
+  // Sort projects: active first, then by latest update date
+  const sortedProjects = [...projectsData].sort((a, b) => {
+    // Active projects come first
+    if (a.status === 'active' && b.status !== 'active') return -1
+    if (a.status !== 'active' && b.status === 'active') return 1
+
+    // Within same status, sort by latest update
+    const aLatest = a.updates.length > 0 ? a.updates[a.updates.length - 1].date : a.startDate
+    const bLatest = b.updates.length > 0 ? b.updates[b.updates.length - 1].date : b.startDate
+    return bLatest.getTime() - aLatest.getTime()
+  })
+
   return (
     <Layout title="Projects" description="MeshEnvy's ongoing projects to build Nevada's mesh network">
       <div className={styles.projectsPage}>
@@ -52,7 +64,7 @@ export default function Projects(): ReactNode {
           </div>
 
           <div className={styles.projectsList}>
-            {projectsData.map((project) => (
+            {sortedProjects.map((project) => (
               <div key={project.id} className={styles.projectCard}>
                 <div className={styles.projectHeader}>
                   <div>
