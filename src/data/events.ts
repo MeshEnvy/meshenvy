@@ -76,7 +76,7 @@ export const eventsData: Event[] = [
   {
     title: "Nevada Meshup - MeshEnvy Launch Event",
     date: new Date("2025-10-21T18:00:00"),
-    location: "Whitney Peak Hotel, 3500 South Virginia Street, Reno, NV 89502",
+    location: "Coffee 'n Comics, 940 W Moana Ln, Reno, NV 89509",
     description:
       "The official launch of the MeshEnvy project, bringing together mesh networking enthusiasts.",
   },
