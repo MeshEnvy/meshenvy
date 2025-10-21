@@ -249,6 +249,13 @@ export const projectsData: Project[] = [
         difficulty: "easy",
       },
       {
+        title: "Set Up Amazon Affiliate Program",
+        description:
+          "Enable Amazon affiliate payouts for equipment recommendations (blocked until 501(c)(3) approved)",
+        completed: false,
+        difficulty: "easy",
+      },
+      {
         title: "Launch Merchandise Store",
         description:
           "Activate online merch store with payment processing (blocked until Stripe account established)",
