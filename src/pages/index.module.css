@@ -30,8 +30,9 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  min-width: 300px;
+  width: 250px;
 }
 
 .buttons a:hover {
