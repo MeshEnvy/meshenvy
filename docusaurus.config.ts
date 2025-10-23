@@ -88,6 +88,7 @@ const config: Config = {
         //   position: "left",
         //   label: "Tutorial",
         // },
+        { to: "/map", label: "Map", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/equipment", label: "Equipment", position: "left" },
         { to: "/resources", label: "Resources", position: "left" },
