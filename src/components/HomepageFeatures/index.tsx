@@ -67,7 +67,7 @@ export default function HomepageFeatures(): ReactNode {
                 Our Mission
               </Heading>
               <p className={clsx('text--center', styles.missionText)}>
-                We are a statewide user group with our home chapter in Reno, NV, dedicated to establishing a
+                We are a statewide nonprofit cooperative of mesh network enthusiasts with our home chapter in Reno, NV, dedicated to establishing a
                 comprehensive mesh network across Nevada. From major cities to small towns, we&apos;re building resilient
                 communication infrastructure that connects all Nevadans through the power of Meshtastic technology.
               </p>
