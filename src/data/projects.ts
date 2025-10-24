@@ -196,9 +196,15 @@ export const projectsData: Project[] = [
     title: "501(c)(3) Nonprofit Formation",
     description:
       "Formation of a 501(c)(3) nonprofit organization to provide a formal structure for fundraising, grant applications, and community organization. This will enable us to accept tax-deductible donations and apply for larger funding opportunities. Many critical capabilities are blocked until nonprofit status is established.",
-    status: "planning",
+    status: "active",
     startDate: new Date("2025-10-09"),
     updates: [
+      {
+        date: new Date("2025-10-24"),
+        title: "Articles of Incorporation Submitted",
+        description:
+          "Submitted Articles of Incorporation to Nevada Secretary of State. Founding Board of Directors declared: Ben Allfree (Founder), Ed Mitchell (SAR, DRI, NSHE), and Leslie Allfree (Emergency/Disaster Response).",
+      },
       {
         date: new Date("2025-10-09"),
         title: "Pending Funding",
@@ -207,6 +213,13 @@ export const projectsData: Project[] = [
       },
     ],
     checklist: [
+      {
+        title: "File Articles of Incorporation",
+        description:
+          "Submit Articles of Incorporation to Nevada Secretary of State",
+        completed: true,
+        difficulty: "medium",
+      },
       {
         title: "Reach $3,000 Fundraising Goal",
         description:
