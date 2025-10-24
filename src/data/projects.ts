@@ -27,9 +27,15 @@ export const projectsData: Project[] = [
     title: "Solar Node Base Unit Prototype",
     description:
       "Developing a solar-powered Meshtastic node prototype designed for remote deployment across Nevada. This base unit will serve as a foundation for our network infrastructure, providing reliable, off-grid connectivity.",
-    status: "active",
+    status: "completed",
     startDate: new Date("2025-09-01"),
     updates: [
+      {
+        date: new Date("2025-10-24"),
+        title: "Solution Selected",
+        description:
+          "Selected WisMesh Repeater Mini as the solar node base unit. Ready-to-use off-grid solution with 3200mAh battery and solar panel.",
+      },
       {
         date: new Date("2025-10-09"),
         title: "Project Initiated",
