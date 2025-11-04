@@ -41,7 +41,6 @@ function FundraiserSection() {
                 <ul className={styles.pricingFeatures}>
                   <li>Official MeshEnvy sticker</li>
                   <li>Public Discord access</li>
-                  <li>Network usage privileges</li>
                   <li>Monthly community newsletter</li>
                 </ul>
                 <p className={styles.pricingNote}>Get started supporting Nevada's mesh network</p>
