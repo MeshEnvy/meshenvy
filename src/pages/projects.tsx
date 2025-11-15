@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react'
 import Layout from '@theme/Layout'
-import Heading from '@theme/Heading'
 import Link from '@docusaurus/Link'
 import { projectsData } from '@site/src/data/projects'
 import styles from './projects.module.css'
+import PageHeader from '@site/src/components/PageHeader'
 
 function getStatusColor(status: string): string {
   switch (status) {
@@ -52,16 +52,10 @@ export default function Projects(): ReactNode {
     <Layout title="Projects" description="MeshEnvy's ongoing projects to build Nevada's mesh network">
       <div className={styles.projectsPage}>
         <div className="container">
-          <Heading as="h1" className={styles.pageTitle}>
-            Our Projects
-          </Heading>
-
-          <div className={styles.introSection}>
-            <p>
-              We're building Nevada's mesh network through concrete projects that expand coverage, improve
-              infrastructure, and connect communities across the state. Track our progress and get involved!
-            </p>
-          </div>
+          <PageHeader
+            title="Our Projects"
+            description="We're building Nevada's mesh network through concrete projects that expand coverage, improve infrastructure, and connect communities across the state. Track our progress and get involved!"
+          />
 
           <div className={styles.projectsList}>
             {sortedProjects.map((project) => (

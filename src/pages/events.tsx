@@ -3,6 +3,7 @@ import Layout from '@theme/Layout'
 import Heading from '@theme/Heading'
 import { eventsData } from '@site/src/data/events'
 import styles from './events.module.css'
+import PageHeader from '@site/src/components/PageHeader'
 
 function formatEventDate(date: Date | undefined): string {
   if (!date) return 'TBD'
@@ -34,16 +35,10 @@ export default function Events(): ReactNode {
     <Layout title="Events" description="Upcoming Meshtastic in-person events and meetups in Nevada">
       <div className={styles.eventsPage}>
         <div className="container">
-          <Heading as="h1" className={styles.pageTitle}>
-            Upcoming Events
-          </Heading>
-
-          <div className={styles.introSection}>
-            <p>
-              Join us at in-person events throughout Nevada to learn about Meshtastic, test equipment, and connect with
-              fellow mesh networking enthusiasts. Everyone is welcome, from beginners to experts!
-            </p>
-          </div>
+          <PageHeader
+            title="Upcoming Events"
+            description="Join us at in-person events throughout Nevada to learn about Meshtastic, test equipment, and connect with fellow mesh networking enthusiasts. Everyone is welcome, from beginners to experts!"
+          />
 
           <div className={styles.categoriesContainer}>
             {upcomingEvents.length > 0 && (

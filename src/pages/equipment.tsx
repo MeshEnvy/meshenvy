@@ -1,23 +1,18 @@
 import type { ReactNode } from 'react'
 import Layout from '@theme/Layout'
-import Heading from '@theme/Heading'
 import styles from './equipment.module.css'
 import { equipmentData } from '../data/equipment'
+import PageHeader from '@site/src/components/PageHeader'
 
 export default function Equipment(): ReactNode {
   return (
     <Layout title="Equipment" description="Recommended equipment for MeshEnvy">
       <div className={styles.equipmentPage}>
         <div className="container">
-          <Heading as="h1" className={styles.pageTitle}>
-            Equipment
-          </Heading>
-
-          <div className={styles.introSection}>
-            <p>
-              Getting started with Meshtastic is incredibly easy! For your personal device, we recommend you buy a SenseCAP Card Tracker T1000-E for Meshtastic. For your off-grid needs, or to support the network, we recommend you buy a WisMesh Repeater Mini. 
-            </p>
-          </div>
+          <PageHeader
+            title="Equipment"
+            description="Getting started with Meshtastic is incredibly easy! For your personal device, we recommend the SenseCAP Card Tracker T1000-E for Meshtastic. For your off-grid needs, or to support the network, we recommend the WisMesh Repeater Mini. Want a full keyboard handheld? Check out the LILYGO T-Deck."
+          />
 
          
 

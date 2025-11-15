@@ -3,23 +3,17 @@ import Layout from '@theme/Layout'
 import Heading from '@theme/Heading'
 import { resourcesData } from '@site/src/data/resources'
 import styles from './resources.module.css'
+import PageHeader from '@site/src/components/PageHeader'
 
 export default function Resources(): ReactNode {
   return (
     <Layout title="Resources" description="Curated list of Meshtastic resources, tools, and community links">
       <div className={styles.resourcesPage}>
         <div className="container">
-          <Heading as="h1" className={styles.pageTitle}>
-            Meshtastic Resources
-          </Heading>
-
-          <div className={styles.introSection}>
-            <p>
-              A curated collection of essential Meshtastic resources to help you learn, build, and connect with the
-              community. Whether you're just getting started or looking to deepen your knowledge, you'll find valuable
-              links here.
-            </p>
-          </div>
+          <PageHeader
+            title="Meshtastic Resources"
+            description="A curated collection of essential Meshtastic resources to help you learn, build, and connect with the community. Whether you're just getting started or looking to deepen your knowledge, you'll find valuable links here."
+          />
 
           <div className={styles.categoriesContainer}>
             {resourcesData.map((category) => (

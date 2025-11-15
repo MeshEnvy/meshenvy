@@ -3,22 +3,17 @@ import Layout from '@theme/Layout'
 import Heading from '@theme/Heading'
 import { chaptersData } from '@site/src/data/chapters'
 import styles from './chapters.module.css'
+import PageHeader from '@site/src/components/PageHeader'
 
 export default function Chapters(): ReactNode {
   return (
     <Layout title="Chapters" description="MeshEnvy chapters and communities across the region">
       <div className={styles.chaptersPage}>
         <div className="container">
-          <Heading as="h1" className={styles.pageTitle}>
-            MeshEnvy Chapters
-          </Heading>
-
-          <div className={styles.introSection}>
-            <p>
-              MeshEnvy is building a network of local chapters to connect Meshtastic enthusiasts, organize events, and
-              grow the mesh network community. Join an existing chapter or start your own!
-            </p>
-          </div>
+          <PageHeader
+            title="MeshEnvy Chapters"
+            description="MeshEnvy is building a network of local chapters to connect Meshtastic enthusiasts, organize events, and grow the mesh network community. Join an existing chapter or start your own!"
+          />
 
           <div className={styles.chaptersContainer}>
             {chaptersData.map((chapter) => (
