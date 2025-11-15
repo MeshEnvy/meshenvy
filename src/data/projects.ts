@@ -31,6 +31,12 @@ export const projectsData: Project[] = [
     startDate: new Date("2025-09-01"),
     updates: [
       {
+        date: new Date("2025-11-15"),
+        title: "Solar Node Field Testing",
+        description:
+          "Running tests on WisMesh Solar Mini, SenseCAP Solar Node, and custom community-built nRF52 configurations to compare resilience and energy efficiency.",
+      },
+      {
         date: new Date("2025-10-24"),
         title: "Solution Selected",
         description:
