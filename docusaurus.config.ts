@@ -94,6 +94,7 @@ const config: Config = {
         { to: "/resources", label: "Resources", position: "left" },
         { to: "/chapters", label: "Chapters", position: "left" },
         { to: "/projects", label: "Projects", position: "left" },
+        { to: "/board-of-directors", label: "Board", position: "left" },
         { to: "/about", label: "About", position: "left" },
         {
           href: "https://meshenvy.printify.me/",
