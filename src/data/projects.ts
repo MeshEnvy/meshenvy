@@ -23,6 +23,22 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
+    id: "envyos-firmware",
+    title: "EnvyOS Firmware",
+    description:
+      "Long-term Go-based firmware for MeshEnvy nodes, designed for cooperative multitasking on low-profile nRF52 MCUs while remaining Meshtastic-compatible. Enables bespoke field behavior as deployment needs evolve.",
+    status: "planning",
+    startDate: new Date("2025-11-15"),
+    updates: [
+      {
+        date: new Date("2025-11-15"),
+        title: "Repository Established",
+        description:
+          "Launched https://github.com/MeshEnvy/envyos to begin bespoke firmware development targeting nRF52 hardware and Meshtastic protocol compatibility.",
+      },
+    ],
+  },
+  {
     id: "solar-node-base-unit",
     title: "Solar Node Base Unit Prototype",
     description:
