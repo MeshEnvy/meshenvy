@@ -206,6 +206,12 @@ export const projectsData: Project[] = [
     startDate: new Date("2025-10-09"),
     updates: [
       {
+        date: new Date("2025-11-15"),
+        title: "Entity ID, EIN, and IRS Filing",
+        description:
+          "Received Nevada Secretary of State entity ID, obtained EIN, and submitted our 501(c)(3) application to the IRS. Awaiting determination and expect the filing to proceed.",
+      },
+      {
         date: new Date("2025-10-24"),
         title: "Articles of Incorporation Submitted",
         description:
@@ -236,7 +242,7 @@ export const projectsData: Project[] = [
       {
         title: "File 501(c)(3) Application",
         description: "Submit IRS Form 1023 or 1023-EZ for tax-exempt status",
-        completed: false,
+        completed: true,
         difficulty: "hard",
       },
       {
